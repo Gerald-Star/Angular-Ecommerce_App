@@ -5,9 +5,8 @@ import { ProductListComponent } from './product/product-list/product-list.compon
 
 const routes: Routes = [
   { path: '', redirectTo: '/products', pathMatch: 'full' },
-  { path: 'products', component: ProductListComponent}
-]
-
+  { path: 'products', component: ProductListComponent }
+];
 
 
 
