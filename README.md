@@ -32,7 +32,14 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Environment development for API
 On the terminal initiate "ng serve --configuration=development" for new angular development"angular.json"
 
+## How to create a module and service connected to the module
 
+Example. To create a cart module with service
+
+ng g module cart
+ng g service cart/cart
+
+This creates a module called cart and cart.service.ts
 ## Angular Material
 https://material.angular.dev/components/card/examples
 
