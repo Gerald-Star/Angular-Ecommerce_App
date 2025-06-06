@@ -31,3 +31,14 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Environment development for API
 On the terminal initiate "ng serve --configuration=development" for new angular development"angular.json"
+
+
+## Angular Material
+https://material.angular.dev/components/card/examples
+
+
+## To use grid and flexbox for responsiveness, install Angular Flex-Layout
+
+npm install @angular/flex-layout
+
+## To see card layout - Angular flex-layout demos

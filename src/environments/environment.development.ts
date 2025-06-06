@@ -12,5 +12,5 @@ This file is part of the Angular environment configuration.
 
 */
 export const environment = {
-  apiUrl: 'https://localhost:3001', // Development API URL
+  apiUrl: 'http://localhost:3001', // Development API URL
 };

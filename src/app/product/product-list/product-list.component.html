@@ -1,12 +1,19 @@
-<p>product-list works!</p>
 
-<div class="product-list">
-  <h2>Product List</h2>
-  <ul>
-    <li *ngFor="let product of products">
-      <h3>{{ product.name }}</h3>
-      <p>Price: {{ product.price | currency }}</p>
-      <button (click)="(product)">Add to Cart</button>
-    </li>
-  </ul>
+
+<div *ngFor="let product of products" >
+  <mat-card class="product-card" appearance="outlined">
+  
+    <img mat-card-image src="assets/images/{{product.image_url}}" alt="">
+    <mat-card-content>
+      <mat-card-title> {{product.name}} </mat-card-title>
+      <mat-card-subtitle> {{product.price | currency: 'USD'}} </mat-card-subtitle>
+    </mat-card-content>
+  
+    </mat-card>
+
 </div>
+
+
+
+
+
