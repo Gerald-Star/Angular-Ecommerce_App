@@ -41,10 +41,17 @@ export class CartViewComponent implements OnInit {
     return total;
   }
 
-
-
-
-};
+  clearCart(): void {
+    this.cartService.clearCart().subscribe();
+    /*() => {
+    this.cartItems = [];
+    this.totalPrice = 0;
+    console.log('Cart cleared successfully');
+  }, error => {
+    console.error('Error clearing cart:', error);
+  });
+}*/
+  };
   
   /* ===================================================================
   Clear the cart by calling the service method 
@@ -57,3 +64,4 @@ export class CartViewComponent implements OnInit {
     }
     
     */
+}
