@@ -13,7 +13,7 @@ export class CartViewComponent implements OnInit {
   totalPrice: number = 0;
 
 
-  constructor(private cartService: CartService) { }
+  constructor(private cartService: CartService) {}
 
   
   /* ===============================================================
@@ -25,7 +25,7 @@ export class CartViewComponent implements OnInit {
     This will allow us to display the cart items in the template
   */
   ngOnInit(): void {
-    this.cartService.getCartItems().subscribe(data => {
+      this.cartService.getCartItems().subscribe(data => {
       this.cartItems = data;
       //console.log('Cart items fetched successfully:', this.cartItems);
       this.totalPrice = this.getTotalPrice(); // Calculate total price after fetching items
@@ -52,16 +52,13 @@ export class CartViewComponent implements OnInit {
   });
 }*/
   };
+
+  checkout(): void {
+    this.cartService.checkout(this.cartItems).subscribe();
+  }
   
-  /* ===================================================================
-  Clear the cart by calling the service method 
-  ======================================================================
-   clearCart(): void {
-    this.cartService.clearCart().subscribe(() => {
-      this.cartItems = [];
-      this.totalPrice = 0;
-      console.log('Cart cleared successfully');
-    }
-    
-    */
-}
+
+
+  
+  
+};
