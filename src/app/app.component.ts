@@ -8,3 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'my-ecommerce';
 }
+
+// This is the main component of the application
