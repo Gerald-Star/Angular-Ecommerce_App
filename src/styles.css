@@ -33,6 +33,18 @@ background-color: rgb(244, 244, 244); }
   color: #161b76;
 }
 
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #161b76;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background: #1b0991;
+}
+
 .text-right {
   text-align: right;
 }
